@@ -1,5 +1,8 @@
+@use "../../sass/mixins" as *; 
+
 .products{
     padding: 0 3rem;
+
     &__title{
         text-align: center;
         padding: 1rem;
@@ -10,5 +13,27 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+    }
+}
+
+@media (max-width: 700px){
+    .products{
+        padding: 0 1rem;
+
+        &__container{
+            grid-template-columns: 1fr;
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px){
+    .products{
+        padding: 0 1rem;
+
+        &__container{
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+        }
     }
 }

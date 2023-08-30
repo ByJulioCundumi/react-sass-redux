@@ -26,3 +26,17 @@
         color: black;
     }
 }
+
+@media (max-width: 700px){
+    .infobar{
+        &__container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 2rem;
+            color: $cta-text-color;
+            font-size: small;
+            @include margin-auto;
+        }
+    }
+}

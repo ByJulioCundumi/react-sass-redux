@@ -15,8 +15,8 @@ function Hero() {
                 <button className="hero__btn">Buy Now!</button>
             </div>
         </div>
-        <div className="hero__">
-            <img src="https://png.pngtree.com/png-vector/20191018/ourlarge/pngtree-shopping-bag-icon-for-your-design-websites-and-projects-png-image_1830188.jpg" alt="" className="hero__img" />
+        <div className="hero__img">
+            <img className="hero__imgItem" src="https://png.pngtree.com/png-vector/20191018/ourlarge/pngtree-shopping-bag-icon-for-your-design-websites-and-projects-png-image_1830188.jpg" alt="" />
         </div>
     </section>
   )
