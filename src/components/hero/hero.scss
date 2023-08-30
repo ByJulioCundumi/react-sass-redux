@@ -1,0 +1,24 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+.hero{
+    background-color: $hero-bg-color;
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.103);
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    border-top: none;
+    margin-top: 2rem;
+
+    &__img{
+        width: 22rem;
+        height: 22rem;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10rem;
+        gap: 1rem;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,57 @@
+@use "../../sass/variables" as *;
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    margin-top: 1.4rem;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+
+    &__logo{
+        color: $navbar-color;
+        font-size: x-large;
+        color: $logo-color;
+    }
+
+    &__icons{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__cart{
+        position: relative;
+        padding: 0.7rem 0.4rem;
+    }
+
+    &__span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: $cart-span-color;
+    }
+
+    &__cartIcon{
+        font-size: large;
+    }
+
+    &__ul{
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__link{
+        color: $navbar-color;
+    }
+
+    &__userIcon{
+        font-size: x-large;
+    }
+
+    &__logIcon{
+        font-size: large;
+    }
+}

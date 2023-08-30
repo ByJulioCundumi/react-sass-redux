@@ -1,0 +1,6 @@
+@use "./sass/mixins" as *;
+
+.app{
+    max-width: 1200px;
+    @include margin-auto;
+}

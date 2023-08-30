@@ -1,0 +1,28 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+.infobar{
+    background-color: $cta-bg-color;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        padding: 0.5rem 2rem;
+        color: $cta-text-color;
+        font-size: small;
+        @include margin-auto;
+    }
+
+    &__select{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: inherit;
+    }
+
+    &__option{
+        color: black;
+    }
+}
