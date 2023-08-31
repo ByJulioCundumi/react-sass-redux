@@ -24,7 +24,7 @@ function Products() {
         <div className='products__container'>
             {filteredProducts.length > 0 ? filteredProducts.map((p)=>{
               return <Product key={p.id}
-                img={p.img}
+                img={p.category.image}
                 title={p.title}
                 description={p.description}
                 price={p.price}

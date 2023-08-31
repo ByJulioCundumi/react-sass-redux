@@ -1,6 +1,6 @@
 export const getProductsRequest = async ()=>{
     try {
-        const data = await fetch("https://64e24a59ab0037358818e718.mockapi.io/api/products")
+        const data = await fetch("https://api.escuelajs.co/api/v1/products")
         return await data.json()
     } catch (error) {
         console.log(error)
